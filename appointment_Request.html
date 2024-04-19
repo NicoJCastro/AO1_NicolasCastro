@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Software-Clinica Del Sol</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Clinica del Sol S.R.L.</h1>
+        <p>Sistema de Gestión de Turnos Médicos</p>
+    </header>
+    
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Seleccione la Especialidad Médica</h2>
+        <ul>
+        <li><a href="professional_Catalog.html">Clínica General</a></li>
+        <li><a href="professional_Catalog.html">Gastroenterología</a></li>
+        <li><a href="professional_Catalog.html">Cardiología</a></li>
+        <li><a href="professional_Catalog.html">Podiatría</a></li>
+        <li><a href="professional_Catalog.html">Oncología</a></li>
+        <a class="to-appointmen" href="appointment_Request.html">Contáctenos</a>
+        </ul>
+     
+        
+    </nav>
+    
+    <!-- Content -->
+    <main class="content">
+        <div class="contact-form">
+            <h2>Contáctenos</h2>
+            <form action="enviar_correo.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <a href="index.html" class="back-to-home">Volver a la página principal</a>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Derechos reservados © 2024 Clinica del Sol S.R.L.</p>
+    </footer>
+</body>
+</html>
